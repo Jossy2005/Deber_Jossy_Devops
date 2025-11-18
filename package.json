@@ -1,0 +1,16 @@
+{
+"name": "deber_josselyn-mena",
+"version": "1.0.0",
+"description": "Ejemplo mínimo para demostrar CI/CD con tests y packaging",
+"main": "src/index.js",
+"scripts": {
+"test": "jest --runInBand",
+"build": "npm pack",
+"prepack": "echo 'prepack: preparar artefacto'"
+},
+"author": "Josselyn",
+"license": "MIT",
+"devDependencies": {
+"jest": "^29.0.0"
+}
+}
