@@ -1,21 +1,19 @@
-const { sum, multiply, isEven } = require('../src/index');
+const { sum, multiply, isEven } = require("../src/index");
 
+describe("Math functions", () => {
+  test("sum(a, b) returns the correct value", () => {
+    expect(sum(2, 3)).toBe(5);
+  });
 
-test('sum adds two numbers', () => {
-expect(sum(10, 5)).toBe(15);
-});
+  test("multiply(a, b) returns the correct value", () => {
+    expect(multiply(4, 5)).toBe(20);
+  });
 
+  test("isEven(n) returns true for even numbers", () => {
+    expect(isEven(8)).toBe(true);
+  });
 
-test('multiply multiplies two numbers', () => {
-expect(multiply(4, 3)).toBe(12);
-});
-
-
-test('isEven returns true for even numbers', () => {
-expect(isEven(8)).toBe(true);
-});
-
-
-test('isEven returns false for odd numbers', () => {
-expect(isEven(7)).toBe(false);
+  test("isEven(n) returns false for odd numbers", () => {
+    expect(isEven(7)).toBe(false);
+  });
 });
